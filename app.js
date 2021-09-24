@@ -43,18 +43,16 @@ function showTime(date, country){
     dhaka.innerHTML = `${formattedHour} : ${min} ${indicator}` ;
 }
 
-function showCountryBasedTime(bd, america, uk, canada, aus, berlin){
+function showCountryBasedTime(bd, america, uk, canada){
     findingUTC(bd, '.bd');
     findingUTC(america, '.usa');
     findingUTC(uk, '.uk');
     findingUTC(canada, '.canada');
-    findingUTC(aus, '.aus');
-    findingUTC(berlin, '.berlin')
 
     setInterval( ()=> showCountryBasedTime(bd, america, uk, canada), 60000 );
 }
 
-showCountryBasedTime(+6,-4,+1,-4,+10,+2);
+showCountryBasedTime(+6,-4,+1,-4);
 
 // showTime();
 
