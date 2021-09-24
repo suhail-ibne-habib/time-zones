@@ -53,21 +53,3 @@ function showCountryBasedTime(bd, america, uk, canada){
 }
 
 showCountryBasedTime(+6,-4,+1,-4);
-
-// showTime();
-
-// function modifyTime(){
-//     const sec   = 1000;
-//     const min   = sec * 60;
-//     const hour  = min * 60;
-//     const day   = hour * 24;
-
-//     console.log( time % day)
-//     const currentHour = Math.floor( ( time % day ) / hour );
-//     const currentMin  = Math.floor( (time % hour) / min );
-
-//     const dhaka = document.querySelector('.bd').querySelector('.time-output');
-//     dhaka.textContent = `${currentHour} : ${currentMin}`;
-// }
-
-// modifyTime();
